@@ -1,0 +1,295 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Serif', serif; /* Elegant font */
+}
+
+/* Header Container */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Light shade similar to white */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; /* Light separator */
+}
+
+/* Logo Styling */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222; /* Dark gray */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #222; /* Dark gray */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C19A42; /* Gold hover effect */
+}
+
+/* Shortened Hero Section */
+.hero {
+    display: flex;
+    height: 80vh; /* Reduced height */
+    width: 100vw; /* Full viewport width */
+}
+
+/* Left Side - Image */
+.hero-image {
+    width: 50%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the section perfectly */
+}
+
+/* Right Side - Content */
+.hero-content {
+    width: 50%;
+    height: 100%;
+    background-color: #0E1B3E; /* Dark blue background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-content h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero-content button {
+    background-color: #C19A42; /* Gold button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #A07F32; /* Darker gold */
+}
+
+/* Finance Section */
+.finance-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B6B27; /* Matching color */
+    padding: 80px 10%;
+}
+
+/* Left Side - Text */
+.finance-content {
+    width: 50%;
+    color: white;
+}
+
+.finance-content h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.finance-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.finance-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #8B6B27;
+}
+
+/* Right Side - Image */
+.finance-image {
+    width: 60%;
+    display: flex;
+    justify-content: right;
+}
+
+.finance-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Financial Tracking Section */
+.tracking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #FFE5B4; /* Peach White */
+}
+
+/* Left Side - Main Text */
+.tracking-content {
+    width: 45%;
+}
+
+.tracking-content h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #202A44;
+}
+
+.tracking-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6B78B6;
+    margin: 10px 0;
+}
+
+/* Additional Text Below Main Content */
+.additional-text {
+    margin-top: 20px;
+}
+
+.additional-text h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #202A44;
+}
+
+.additional-text p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #444;
+}
+
+.additional-text .btn {
+    background-color: #8B4513; /* Brown */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.additional-text .btn:hover {
+    background-color: #5A2E0C; /* Darker Brown on Hover */
+}
+
+/* Right Side - Image */
+.tracking-image {
+    width: 50%;
+    height: 350px; /* Increased height */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tracking-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fits without distortion */
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image, .hero-content {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hero-content {
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: right;
+    }
+
+    .finance-section {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .finance-content, .finance-image {
+        width: 100%;
+    }
+
+    .finance-image img {
+        width: 100%;
+    }
+
+    .tracking-section {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .tracking-content, .tracking-image {
+        width: 100%;
+    }
+
+    .tracking-image img {
+        width: 100%;
+    }
+}
