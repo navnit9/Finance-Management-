@@ -8,7 +8,7 @@
 
 /* Background */
 body {
-    background: #B3C7C9;
+    background: #175278;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,20 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+body
+{
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Card Styles */
@@ -62,8 +76,10 @@ button:hover {
 
 /* Forgot Password & Sign Up/Sign In Links */
 a {
+    
     text-decoration: none;
     color: #007bff;
+    margin-top: 10px;
     font-size: 14px;
 }
 
@@ -75,4 +91,10 @@ a:hover {
 .toggle-text {
     margin-top: 15px;
     font-size: 14px;
+}
+#forgot{
+    display: block;
+    margin-top: 15px; /* Adjust this value to move it down */
+    text-align: center;
+    color: #007bff;
 }
